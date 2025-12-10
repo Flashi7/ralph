@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peakly - La Plateforme Sociale Pour Skieurs & Snowboarders</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Snow Animation Container -->
+    <div class="snow-container" id="snowContainer"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo-container">
+                    <div class="logo-img">
+                        <img src="logo.png" alt="Peakly" class="logo-image" />
+                    </div>
+                    <span class="logo-text">Peakly</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#about" class="nav-link">À propos</a></li>
+                    <li><a href="#how-it-works" class="nav-link">Comment ça marche</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#contact" class="nav-link">Nous contacter</a></li>
+                    <li><a href="#download" class="btn-download">Télécharger Peakly</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-bg-image"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="logo.png" alt="Peakly" class="hero-logo-image" />
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">La Plateforme Sociale</span>
+                <span class="title-line">Pour Skieurs & Snowboarders</span>
+            </h1>
+            <p class="hero-subtitle">Rejoins des milliers d'utilisateurs qui n'attendent que toi pour s'éclater</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn-app-store">
+                    <img src="images/app-store-badge.svg" alt="Télécharger sur iOS" class="app-badge">
+                </a>
+                <a href="#" class="btn-google-play">
+                    <img src="images/google-play-badge.svg" alt="Télécharger sur Google Play" class="app-badge">
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50000">0</div>
+                    <div class="stat-label">Utilisateurs</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="150">0</div>
+                    <div class="stat-label">Stations</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="1">0</div>
+                    <div class="stat-label">Swipe</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Track. Match. Shred Section -->
+    <section class="tagline" id="how-it-works">
+        <div class="tagline-content">
+            <div class="tagline-icons">
+                <div class="tagline-icon">📊</div>
+                <div class="tagline-icon">🤝</div>
+                <div class="tagline-icon">⛷️</div>
+            </div>
+            <h2>
+                <span class="word-animate">Swipe.</span>
+                <span class="word-animate">Match.</span>
+                <span class="word-animate">Ride.</span>
+            </h2>
+            <p>Suivez vos statistiques, trouvez d'autres skieurs et snowboarders avec qui rider, coordonnez le covoiturage, et planifiez des événements grâce à une application facile à utiliser.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="about">
+        <div class="feature">
+            <div class="feature-image">
+                <img src="images/track-stats.jpg" alt="Suivez vos statistiques">
+            </div>
+            <div class="feature-content">
+                <div class="feature-icon">📈</div>
+                <h3>Suivez Vos Statistiques</h3>
+                <p>Peakly vous permet de suivre vos statistiques incluant la vitesse, la distance, les pistes skiiées, le dénivelé, et bien plus encore.</p>
+                <ul class="feature-list">
+                    <li>✓ Vitesse maximale</li>
+                    <li>✓ Distance parcourue</li>
+                    <li>✓ Dénivelé total</li>
+                    <li>✓ Temps de pratique</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="feature feature-reverse">
+            <div class="feature-image">
+                <img src="images/ai-matchmaking.jpg" alt="Matchmaking IA">
+            </div>
+            <div class="feature-content">
+                <div class="feature-icon">🤖</div>
+                <h3>Matchmaking Alimenté par l'IA</h3>
+                <p>Notre algorithme propriétaire alimenté par l'IA utilise vos données de pratique et vous met en relation avec d'autres riders ayant des niveaux de compétence similaires.</p>
+                <ul class="feature-list">
+                    <li>✓ Analyse intelligente</li>
+                    <li>✓ Recommandations personnalisées</li>
+                    <li>✓ Compatibilité garantie</li>
+                    <li>✓ Communauté active</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-image">
+                <img src="images/carpooling.jpg" alt="Covoiturage">
+            </div>
+            <div class="feature-content">
+                <div class="feature-icon">🚗</div>
+                <h3>Covoiturage</h3>
+                <p>Peakly facilite le covoiturage en vous mettant en relation avec des riders à proximité se rendant à la même station. Trouvez rapidement des trajets, partagez les frais de voyage, et connectez-vous avec de nouveaux amis avant même d'arriver sur les pistes.</p>
+                <ul class="feature-list">
+                    <li>✓ Recherche en temps réel</li>
+                    <li>✓ Partage des frais</li>
+                    <li>✓ Profils vérifiés</li>
+                    <li>✓ Planification facile</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="download">
+        <div class="cta-content">
+            <h2>Rejoignez les Pistes</h2>
+            <p>Inscrivez-vous pour vous connecter avec des amis skieurs et snowboarders, suivez vos progrès, et partagez l'aventure en temps réel.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn-app-store">
+                    <img src="images/app-store-badge.svg" alt="Télécharger Peakly" class="app-badge">
+                </a>
+                <a href="#" class="btn-app-store">
+                    <img src="images/app-store-badge.svg" alt="Télécharger Peakly" class="app-badge">
+                </a>
+                <a href="#" class="btn-app-store">
+                    <img src="images/app-store-badge.svg" alt="Télécharger Peakly" class="app-badge">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="faq-container">
+            <h2>Questions Fréquentes</h2>
+            <div class="faq-items">
+                <div class="faq-item">
+                    <h3>Qu'est-ce que Peakly, et comment ça fonctionne ?</h3>
+                    <p>Peakly est un réseau social pour skieurs qui combine le suivi de performance, le matchmaking pour trouver des skieurs de votre niveau, le covoiturage, les mises à jour météo en temps réel, et les événements dans votre région. Créez simplement un compte, configurez votre profil, et commencez à vous connecter avec la communauté du ski !</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Dois-je payer pour utiliser l'application, ou est-ce gratuit ?</h3>
+                    <p>Peakly propose une version gratuite avec accès aux fonctionnalités principales. Cependant, il existe également une version premium qui débloque des fonctionnalités supplémentaires comme des analyses de suivi avancées, des groupes exclusifs, et des notifications personnalisées.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Comment Peakly suit ma vitesse et ma distance ?</h3>
+                    <p>L'application utilise le GPS de votre appareil pour surveiller votre vitesse, altitude, distance totale, et changements d'altitude. Toutes les données sont collectées en temps réel et peuvent être consultées dans votre historique d'activité.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Le suivi fonctionne-t-il en temps réel même sans connexion internet ?</h3>
+                    <p>Oui ! Le suivi repose sur le GPS, vous pouvez donc continuer à surveiller vos pistes même sans connexion internet. Vos données se synchroniseront automatiquement une fois que vous serez de nouveau en ligne.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2>Nous Contacter</h2>
+                <p>Une question ? Une suggestion ? N'hésitez pas à nous écrire !</p>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">Prénom</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="Votre prénom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Nom</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Votre nom" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Adresse e-mail</label>
+                    <input type="email" id="email" name="email" placeholder="votre.email@exemple.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Sujet</label>
+                    <input type="text" id="subject" name="subject" placeholder="Objet de votre message" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Écrivez votre message ici..." required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">
+                    <span>Envoyer le message</span>
+                    <span class="btn-icon">❄</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="logo.png" alt="Peakly" class="footer-logo">
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="#support">Support</a></li>
+                        <li><a href="#eula">CGU</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#terms">Conditions d'Utilisation</a></li>
+                        <li><a href="#privacy">Politique de Confidentialité</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Téléchargements</h4>
+                    <ul>
+                        <li><a href="#iphone">Pour iPhone</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Réseaux Sociaux</h4>
+                    <ul>
+                        <li><a href="#tiktok">TikTok</a></li>
+                        <li><a href="#linkedin">LinkedIn</a></li>
+                        <li><a href="#twitter">Twitter/X</a></li>
+                        <li><a href="#instagram">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Peakly. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
