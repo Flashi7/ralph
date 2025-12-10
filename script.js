@@ -70,8 +70,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const snowflake = document.createElement('div');
         snowflake.className = 'snowflake';
         
-        // Different snowflake symbols
-        const snowflakeSymbols = ['❄', '❅', '❆', '✻', '✼', '✽', '✾', '✿'];
+        // Different snowflake symbols - only real snowflakes, no flower symbols
+        const snowflakeSymbols = ['❄', '❅', '❆'];
         const randomSymbol = snowflakeSymbols[Math.floor(Math.random() * snowflakeSymbols.length)];
         snowflake.textContent = randomSymbol;
         
