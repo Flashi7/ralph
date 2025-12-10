@@ -1,0 +1,40 @@
+{
+  "rewrites": [
+    {
+      "source": "/legal/privacy-policy",
+      "destination": "/legal/privacy-policy.html"
+    },
+    {
+      "source": "/legal/terms-of-service",
+      "destination": "/legal/terms-of-service.html"
+    },
+    {
+      "source": "/legal/eula",
+      "destination": "/legal/eula.html"
+    },
+    {
+      "source": "/legal",
+      "destination": "/legal/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
+    }
+  ]
+}
+
