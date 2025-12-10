@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documents Légaux - Peakly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-pink: #FF1493;
+            --fuchsia: #FF00FF;
+            --magenta: #FF00CC;
+            --bg-black: #000000;
+            --bg-dark: #0a0a0a;
+            --text-white: #ffffff;
+            --text-light: #e0e0e0;
+            --text-lighter: #b0b0b0;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--bg-black);
+            color: var(--text-white);
+            line-height: 1.8;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--bg-dark);
+            padding: 3rem;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 20, 147, 0.2);
+        }
+        
+        h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            background: linear-gradient(135deg, var(--primary-pink), var(--fuchsia), var(--magenta));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .documents {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .document-card {
+            background: rgba(255, 20, 147, 0.05);
+            border: 1px solid rgba(255, 20, 147, 0.2);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .document-card:hover {
+            background: rgba(255, 20, 147, 0.1);
+            border-color: rgba(255, 20, 147, 0.4);
+            transform: translateY(-2px);
+        }
+        
+        .document-card h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-white);
+        }
+        
+        .document-card p {
+            color: var(--text-lighter);
+            margin-bottom: 1rem;
+        }
+        
+        .document-card a {
+            display: inline-block;
+            color: var(--primary-pink);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border: 1px solid var(--primary-pink);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .document-card a:hover {
+            background: var(--primary-pink);
+            color: var(--text-white);
+        }
+        
+        .back-link {
+            margin-top: 2rem;
+            display: inline-block;
+            color: var(--text-lighter);
+            text-decoration: none;
+        }
+        
+        .back-link:hover {
+            color: var(--primary-pink);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Documents Légaux</h1>
+        <p style="color: var(--text-lighter); margin-bottom: 2rem;">Consultez nos documents légaux pour en savoir plus sur l'utilisation de Peakly.</p>
+        
+        <div class="documents">
+            <div class="document-card">
+                <h2>Politique de Confidentialité</h2>
+                <p>Découvrez comment nous collectons, utilisons et protégeons vos données personnelles.</p>
+                <a href="/legal/privacy-policy">Lire la politique</a>
+            </div>
+            
+            <div class="document-card">
+                <h2>Conditions d'Utilisation</h2>
+                <p>Consultez les termes et conditions régissant l'utilisation de l'application Peakly.</p>
+                <a href="/legal/terms-of-service">Lire les conditions</a>
+            </div>
+            
+            <div class="document-card">
+                <h2>Contrat de Licence Utilisateur Final (EULA)</h2>
+                <p>Informations sur la licence d'utilisation de l'application Peakly.</p>
+                <a href="/legal/eula">Lire le contrat</a>
+            </div>
+        </div>
+        
+        <a href="/" class="back-link">← Retour à l'accueil</a>
+    </div>
+</body>
+</html>
+
