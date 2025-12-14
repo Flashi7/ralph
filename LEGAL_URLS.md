@@ -56,3 +56,6 @@ Cette page liste tous les documents légaux disponibles.
 4. Ajouter les URLs dans App Store Connect
 5. Soumettre l'application pour review
 
+
+
+

@@ -618,6 +618,34 @@ body {
     text-decoration: none;
 }
 
+.hero-legal-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    color: var(--text-lighter);
+    flex-wrap: wrap;
+}
+
+.hero-legal-links a {
+    color: var(--text-lighter);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    opacity: 0.7;
+}
+
+.hero-legal-links a:hover {
+    color: var(--primary-pink);
+    opacity: 1;
+}
+
+.hero-legal-links span {
+    opacity: 0.5;
+    color: var(--text-lighter);
+}
+
 /* Tagline Section */
 .tagline {
     padding: 8rem 2rem;

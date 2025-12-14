@@ -1,20 +1,32 @@
 {
   "rewrites": [
     {
+      "source": "/privacy-policy",
+      "destination": "/privacy-policy.html"
+    },
+    {
+      "source": "/terms-of-service",
+      "destination": "/terms-of-service.html"
+    },
+    {
+      "source": "/eula",
+      "destination": "/eula.html"
+    },
+    {
       "source": "/legal/privacy-policy",
-      "destination": "/legal/privacy-policy.html"
+      "destination": "/privacy-policy.html"
     },
     {
       "source": "/legal/terms-of-service",
-      "destination": "/legal/terms-of-service.html"
+      "destination": "/terms-of-service.html"
     },
     {
       "source": "/legal/eula",
-      "destination": "/legal/eula.html"
+      "destination": "/eula.html"
     },
     {
       "source": "/legal",
-      "destination": "/legal/index.html"
+      "destination": "/terms-of-service.html"
     }
   ],
   "headers": [
@@ -37,4 +49,7 @@
     }
   ]
 }
+
+
+
 

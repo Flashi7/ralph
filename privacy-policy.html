@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de Confidentialité - Peakly</title>
+    <meta name="description" content="Politique de confidentialité de Peakly - Découvrez comment nous collectons, utilisons et protégeons vos données personnelles conformément au RGPD.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .legal-page {
+            padding: 8rem 2rem 4rem;
+            min-height: 100vh;
+        }
+
+        .legal-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .legal-header {
+            margin-bottom: 3rem;
+        }
+
+        .legal-header h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--primary-pink), var(--fuchsia), var(--magenta));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .legal-date {
+            color: var(--text-lighter);
+            font-size: 0.95rem;
+            font-style: italic;
+        }
+
+        .legal-toc {
+            background: rgba(255, 20, 147, 0.05);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .legal-toc h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-white);
+        }
+
+        .legal-toc ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .legal-toc li {
+            margin-bottom: 0.75rem;
+        }
+
+        .legal-toc a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid transparent;
+        }
+
+        .legal-toc a:hover {
+            color: var(--primary-pink);
+            border-bottom-color: var(--primary-pink);
+            transform: translateX(5px);
+        }
+
+        .legal-section {
+            background: rgba(255, 20, 147, 0.05);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            scroll-margin-top: 100px;
+        }
+
+        .legal-section h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: var(--text-white);
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(255, 20, 147, 0.2);
+        }
+
+        .legal-section h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-white);
+        }
+
+        .legal-section p {
+            color: var(--text-lighter);
+            line-height: 1.8;
+            margin-bottom: 1.25rem;
+            font-size: 1rem;
+        }
+
+        .legal-section ul {
+            color: var(--text-lighter);
+            margin-left: 2rem;
+            margin-bottom: 1.25rem;
+            line-height: 1.8;
+        }
+
+        .legal-section li {
+            margin-bottom: 0.75rem;
+        }
+
+        .legal-section strong {
+            color: var(--text-white);
+            font-weight: 600;
+        }
+
+        .legal-back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-pink);
+            text-decoration: none;
+            margin-top: 3rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .legal-back-link:hover {
+            color: var(--fuchsia);
+            transform: translateX(-5px);
+        }
+
+        @media (max-width: 768px) {
+            .legal-page {
+                padding: 6rem 1.5rem 3rem;
+            }
+
+            .legal-header h1 {
+                font-size: 2.2rem;
+            }
+
+            .legal-toc,
+            .legal-section {
+                padding: 1.5rem;
+            }
+
+            .legal-section h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Snow Animation Container -->
+    <div class="snow-container" id="snowContainer"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo-container">
+                    <div class="logo-img">
+                        <img src="logo.png" alt="Peakly" class="logo-image" />
+                    </div>
+                    <a href="/" class="logo-text" style="text-decoration: none; color: inherit;">Peakly</a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="/#about" class="nav-link">À propos</a></li>
+                    <li><a href="/#how-it-works" class="nav-link">Comment ça marche</a></li>
+                    <li><a href="/#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="/#contact" class="nav-link">Nous contacter</a></li>
+                    <li><a href="/#download" class="btn-download">Télécharger Peakly</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="legal-page">
+        <div class="legal-container">
+            <div class="legal-header">
+                <h1>Politique de Confidentialité</h1>
+                <p class="legal-date">Dernière mise à jour : <span id="updateDate"></span></p>
+            </div>
+
+            <nav class="legal-toc" aria-label="Table des matières">
+                <h2>Table des matières</h2>
+                <ul>
+                    <li><a href="#identite">Identité du responsable du traitement</a></li>
+                    <li><a href="#donnees">Données personnelles collectées</a></li>
+                    <li><a href="#finalites">Finalités de la collecte</a></li>
+                    <li><a href="#geolocalisation">Géolocalisation</a></li>
+                    <li><a href="#base-legale">Base légale du traitement</a></li>
+                    <li><a href="#partage">Partage des données</a></li>
+                    <li><a href="#conservation">Durée de conservation</a></li>
+                    <li><a href="#securite">Sécurité</a></li>
+                    <li><a href="#droits">Droits des utilisateurs</a></li>
+                    <li><a href="#cookies">Cookies et technologies similaires</a></li>
+                    <li><a href="#modifications">Modifications</a></li>
+                </ul>
+            </nav>
+
+            <section class="legal-section" id="intro">
+                <p>Peakly (« nous », « notre », « l'Application ») attache une importance particulière à la protection de vos données personnelles et s'engage à les traiter dans le respect du Règlement Général sur la Protection des Données (RGPD).</p>
+            </section>
+
+            <section class="legal-section" id="identite">
+                <h2>Identité du responsable du traitement</h2>
+                <p>Le responsable du traitement est :</p>
+                <p>
+                    <strong>Peakly</strong><br>
+                    Adresse : 7 rue de la Magnanerie, 83120 Sainte-Maxime, France<br>
+                    Email : <a href="mailto:support@peakly.cloud" style="color: var(--primary-pink);">support@peakly.cloud</a>
+                </p>
+            </section>
+
+            <section class="legal-section" id="donnees">
+                <h2>Données personnelles collectées</h2>
+                <p>Peakly collecte les données suivantes :</p>
+                <ul>
+                    <li>Adresse email</li>
+                    <li>Nom et/ou pseudonyme</li>
+                    <li>Photo de profil</li>
+                    <li>Date de naissance / âge</li>
+                    <li>Données de géolocalisation (précise et approximative)</li>
+                    <li>Données sportives (vitesse, distance, activité, stations)</li>
+                    <li>Messages privés échangés via l'application</li>
+                    <li>Données techniques (adresse IP, type d'appareil, système d'exploitation)</li>
+                </ul>
+            </section>
+
+            <section class="legal-section" id="finalites">
+                <h2>Finalités de la collecte</h2>
+                <p>Les données sont utilisées pour :</p>
+                <ul>
+                    <li>Création et gestion des comptes utilisateurs</li>
+                    <li>Fonctionnalités de matching et de messagerie</li>
+                    <li>Mise en relation des utilisateurs</li>
+                    <li>Affichage de statistiques sportives</li>
+                    <li>Amélioration de l'expérience utilisateur</li>
+                    <li>Sécurité et prévention des abus</li>
+                    <li>Support client</li>
+                    <li>Respect des obligations légales</li>
+                </ul>
+            </section>
+
+            <section class="legal-section" id="geolocalisation">
+                <h2>Géolocalisation</h2>
+                <p>La géolocalisation est utilisée pour :</p>
+                <ul>
+                    <li>Afficher les utilisateurs à proximité</li>
+                    <li>Proposer des fonctionnalités liées aux stations de ski</li>
+                </ul>
+                <p>L'utilisateur peut désactiver la géolocalisation depuis les réglages de son appareil.</p>
+            </section>
+
+            <section class="legal-section" id="base-legale">
+                <h2>Base légale du traitement</h2>
+                <p>Les traitements sont fondés sur :</p>
+                <ul>
+                    <li>Le consentement de l'utilisateur</li>
+                    <li>L'exécution du contrat (Conditions d'Utilisation)</li>
+                    <li>L'intérêt légitime de Peakly</li>
+                    <li>Les obligations légales</li>
+                </ul>
+            </section>
+
+            <section class="legal-section" id="partage">
+                <h2>Partage des données</h2>
+                <p>Les données ne sont jamais vendues.</p>
+                <p>Elles peuvent être partagées uniquement avec :</p>
+                <ul>
+                    <li>Prestataires techniques (hébergement, analytics)</li>
+                    <li>Autorités légales si requis par la loi</li>
+                </ul>
+            </section>
+
+            <section class="legal-section" id="conservation">
+                <h2>Durée de conservation</h2>
+                <p>Les données sont conservées :</p>
+                <ul>
+                    <li>Tant que le compte est actif</li>
+                    <li>Puis supprimées ou anonymisées après suppression du compte, sauf obligation légale contraire</li>
+                </ul>
+            </section>
+
+            <section class="legal-section" id="securite">
+                <h2>Sécurité</h2>
+                <p>Peakly met en œuvre des mesures techniques et organisationnelles pour protéger les données contre tout accès non autorisé.</p>
+            </section>
+
+            <section class="legal-section" id="droits">
+                <h2>Droits des utilisateurs</h2>
+                <p>Conformément au RGPD, vous disposez des droits suivants :</p>
+                <ul>
+                    <li>Accès</li>
+                    <li>Rectification</li>
+                    <li>Suppression</li>
+                    <li>Opposition</li>
+                    <li>Limitation</li>
+                    <li>Portabilité</li>
+                </ul>
+                <p>Toute demande : <a href="mailto:support@peakly.cloud" style="color: var(--primary-pink);">support@peakly.cloud</a></p>
+            </section>
+
+            <section class="legal-section" id="cookies">
+                <h2>Cookies et technologies similaires</h2>
+                <p>Peakly peut utiliser des technologies similaires pour améliorer l'application et analyser l'usage.</p>
+            </section>
+
+            <section class="legal-section" id="modifications">
+                <h2>Modifications</h2>
+                <p>Cette politique peut être modifiée à tout moment. Les utilisateurs seront informés en cas de changement majeur.</p>
+            </section>
+
+            <a href="/" class="legal-back-link">
+                ← Retour à l'accueil
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="logo.png" alt="Peakly" class="footer-logo">
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="/#contact">Contact</a></li>
+                        <li><a href="/privacy-policy">Politique de Confidentialité</a></li>
+                        <li><a href="/terms-of-service">Conditions d'Utilisation</a></li>
+                        <li><a href="/eula">EULA</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Téléchargements</h4>
+                    <ul>
+                        <li><a href="/#download">Pour iPhone</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Réseaux Sociaux</h4>
+                    <ul>
+                        <li><a href="#tiktok">TikTok</a></li>
+                        <li><a href="#linkedin">LinkedIn</a></li>
+                        <li><a href="#twitter">Twitter/X</a></li>
+                        <li><a href="#instagram">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Peakly. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('updateDate').textContent = new Date().toLocaleDateString('fr-FR', { year: 'numeric', month: 'long', day: 'numeric' });
+    </script>
+</body>
+</html>
+

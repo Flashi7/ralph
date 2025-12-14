@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions d'Utilisation - Peakly</title>
+    <meta name="description" content="Conditions d'utilisation de Peakly - Consultez les termes et conditions régissant l'utilisation de notre application sociale pour skieurs et snowboarders.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .legal-page {
+            padding: 8rem 2rem 4rem;
+            min-height: 100vh;
+        }
+
+        .legal-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .legal-header {
+            margin-bottom: 3rem;
+        }
+
+        .legal-header h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--primary-pink), var(--fuchsia), var(--magenta));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .legal-date {
+            color: var(--text-lighter);
+            font-size: 0.95rem;
+            font-style: italic;
+        }
+
+        .legal-toc {
+            background: rgba(255, 20, 147, 0.05);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .legal-toc h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-white);
+        }
+
+        .legal-toc ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .legal-toc li {
+            margin-bottom: 0.75rem;
+        }
+
+        .legal-toc a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid transparent;
+        }
+
+        .legal-toc a:hover {
+            color: var(--primary-pink);
+            border-bottom-color: var(--primary-pink);
+            transform: translateX(5px);
+        }
+
+        .legal-section {
+            background: rgba(255, 20, 147, 0.05);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            scroll-margin-top: 100px;
+        }
+
+        .legal-section h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: var(--text-white);
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(255, 20, 147, 0.2);
+        }
+
+        .legal-section h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-white);
+        }
+
+        .legal-section p {
+            color: var(--text-lighter);
+            line-height: 1.8;
+            margin-bottom: 1.25rem;
+            font-size: 1rem;
+        }
+
+        .legal-section ul {
+            color: var(--text-lighter);
+            margin-left: 2rem;
+            margin-bottom: 1.25rem;
+            line-height: 1.8;
+        }
+
+        .legal-section li {
+            margin-bottom: 0.75rem;
+        }
+
+        .legal-section strong {
+            color: var(--text-white);
+            font-weight: 600;
+        }
+
+        .legal-back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-pink);
+            text-decoration: none;
+            margin-top: 3rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .legal-back-link:hover {
+            color: var(--fuchsia);
+            transform: translateX(-5px);
+        }
+
+        @media (max-width: 768px) {
+            .legal-page {
+                padding: 6rem 1.5rem 3rem;
+            }
+
+            .legal-header h1 {
+                font-size: 2.2rem;
+            }
+
+            .legal-toc,
+            .legal-section {
+                padding: 1.5rem;
+            }
+
+            .legal-section h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Snow Animation Container -->
+    <div class="snow-container" id="snowContainer"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo-container">
+                    <div class="logo-img">
+                        <img src="logo.png" alt="Peakly" class="logo-image" />
+                    </div>
+                    <a href="/" class="logo-text" style="text-decoration: none; color: inherit;">Peakly</a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="/#about" class="nav-link">À propos</a></li>
+                    <li><a href="/#how-it-works" class="nav-link">Comment ça marche</a></li>
+                    <li><a href="/#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="/#contact" class="nav-link">Nous contacter</a></li>
+                    <li><a href="/#download" class="btn-download">Télécharger Peakly</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="legal-page">
+        <div class="legal-container">
+            <div class="legal-header">
+                <h1>Conditions d'Utilisation</h1>
+                <p class="legal-date">Dernière mise à jour : <span id="updateDate"></span></p>
+            </div>
+
+            <nav class="legal-toc" aria-label="Table des matières">
+                <h2>Table des matières</h2>
+                <ul>
+                    <li><a href="#objet">Objet</a></li>
+                    <li><a href="#acces">Accès à l'application</a></li>
+                    <li><a href="#fonctionnement">Fonctionnement de l'application</a></li>
+                    <li><a href="#responsabilite">Responsabilité – Activité sportive</a></li>
+                    <li><a href="#comportement">Comportement des utilisateurs</a></li>
+                    <li><a href="#propriete">Propriété intellectuelle</a></li>
+                    <li><a href="#monetisation">Monétisation</a></li>
+                    <li><a href="#suppression">Suppression du compte</a></li>
+                    <li><a href="#droit">Droit applicable</a></li>
+                </ul>
+            </nav>
+
+            <section class="legal-section" id="objet">
+                <h2>Objet</h2>
+                <p>Les présentes CGU régissent l'accès et l'utilisation de l'application Peakly, application sociale, communautaire, sportive et de mise en relation entre utilisateurs pratiquant le ski.</p>
+            </section>
+
+            <section class="legal-section" id="acces">
+                <h2>Accès à l'application</h2>
+                <p>L'accès est réservé aux personnes âgées de 16 ans minimum.</p>
+                <p>La création d'un compte est obligatoire.</p>
+            </section>
+
+            <section class="legal-section" id="fonctionnement">
+                <h2>Fonctionnement de l'application</h2>
+                <p>Peakly permet :</p>
+                <ul>
+                    <li>La création de profils</li>
+                    <li>Le matching entre utilisateurs</li>
+                    <li>La messagerie privée</li>
+                    <li>L'affichage de statistiques sportives</li>
+                    <li>L'utilisation de la géolocalisation</li>
+                </ul>
+                <p>Peakly n'organise aucun événement et ne garantit aucune rencontre.</p>
+            </section>
+
+            <section class="legal-section" id="responsabilite">
+                <h2>Responsabilité – Activité sportive</h2>
+                <p>Le ski est une activité comportant des risques.</p>
+                <p>Peakly :</p>
+                <ul>
+                    <li>Ne fournit aucun conseil sportif</li>
+                    <li>Ne supervise aucune activité</li>
+                    <li>N'est pas responsable des accidents, blessures ou dommages</li>
+                    <li>Ne garantit pas la sécurité des rencontres entre utilisateurs</li>
+                </ul>
+                <p>Chaque utilisateur agit sous sa propre responsabilité.</p>
+            </section>
+
+            <section class="legal-section" id="comportement">
+                <h2>Comportement des utilisateurs</h2>
+                <p>Il est interdit de :</p>
+                <ul>
+                    <li>Publier du contenu illégal, violent, discriminatoire</li>
+                    <li>Harceler ou menacer</li>
+                    <li>Usurper une identité</li>
+                    <li>Utiliser l'application à des fins commerciales sans autorisation</li>
+                </ul>
+                <p>Peakly se réserve le droit de suspendre ou supprimer un compte.</p>
+            </section>
+
+            <section class="legal-section" id="propriete">
+                <h2>Propriété intellectuelle</h2>
+                <p>L'ensemble de l'application, du nom Peakly, du logo, du design et des contenus est protégé par le droit de la propriété intellectuelle.</p>
+                <p>Toute reproduction est strictement interdite.</p>
+            </section>
+
+            <section class="legal-section" id="monetisation">
+                <h2>Monétisation</h2>
+                <p>Peakly peut proposer :</p>
+                <ul>
+                    <li>Des achats in-app</li>
+                    <li>Des abonnements mensuels</li>
+                </ul>
+                <p>Les conditions tarifaires seront précisées dans l'application.</p>
+            </section>
+
+            <section class="legal-section" id="suppression">
+                <h2>Suppression du compte</h2>
+                <p>L'utilisateur peut supprimer son compte à tout moment.</p>
+                <p>Peakly peut supprimer un compte en cas de violation des CGU.</p>
+            </section>
+
+            <section class="legal-section" id="droit">
+                <h2>Droit applicable</h2>
+                <p>Les présentes CGU sont soumises au droit français.</p>
+                <p>Tout litige relève de la compétence des tribunaux français.</p>
+            </section>
+
+            <a href="/" class="legal-back-link">
+                ← Retour à l'accueil
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="logo.png" alt="Peakly" class="footer-logo">
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="/#contact">Contact</a></li>
+                        <li><a href="/privacy-policy">Politique de Confidentialité</a></li>
+                        <li><a href="/terms-of-service">Conditions d'Utilisation</a></li>
+                        <li><a href="/eula">EULA</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Téléchargements</h4>
+                    <ul>
+                        <li><a href="/#download">Pour iPhone</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Réseaux Sociaux</h4>
+                    <ul>
+                        <li><a href="#tiktok">TikTok</a></li>
+                        <li><a href="#linkedin">LinkedIn</a></li>
+                        <li><a href="#twitter">Twitter/X</a></li>
+                        <li><a href="#instagram">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Peakly. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('updateDate').textContent = new Date().toLocaleDateString('fr-FR', { year: 'numeric', month: 'long', day: 'numeric' });
+    </script>
+</body>
+</html>
+
